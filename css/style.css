@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P:300,400,600,700);
+:root {
+	--contrast: #ff6e67;
+}
+
+html, body {
+	height: 250px;
+	margin: 0;
+	color: white;
+	font-size: 0.75rem;
+	font-family: 'Press Start 2P', cursive;
+}
+
+body {
+	background-color: #000;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.main-container {
+	justify-content: center;
+	display: flex;
+	position: relative;
+	flex: 1 1;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	flex-direction: column;
+	/* height: 145px; */
+	height: 100%;
+	width: 375px;
+}
+
+svg {
+	fill: white;
+	cursor: auto;
+}
+
+.player-container {
+	background-color: rgba(0, 0, 0, .8);
+	height: 50px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.player-container svg {
+	cursor: pointer;
+	width: 30px;
+}
+
+.player-container svg:hover {
+	fill: var(--contrast);
+}
+
+.song-data-container {
+	text-align: start;
+	display: grid;
+	align-items: center;
+	vertical-align: middle;
+	padding-left: 5%;
+	width: 45%;
+	height: 100%;
+}
+
+.song-controls {
+	display: -webkit-inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.song-artist {
+	color: var(--contrast);
+}
+
+.song-name span {
+	position: relative;
+}
+
+.volume-control input {
+	appearance: none;
+	height: 5px;
+	background: #ffffff;
+	outline: none;
+	border-radius: 10px;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	cursor: pointer;
+}
+
+.volume-control input::-webkit-slider-thumb {
+	appearance: none;
+	border-radius: 15px;
+	width: 15px;
+	height: 15px;
+	border-color: #000000;
+	box-sizing: border-box;
+	border-width: 30px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.play-pause-switch svg.playing :not(.pause), .play-pause-switch svg:not(.playing) .pause {
+	display: none;
+}
+
+.change-theme-button {
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+	width: fit-content;
+	align-self: center;
+	margin-bottom: 1%;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, .8);
+	user-select: none;
+}
+
+.fullscreen-mode {
+	justify-content: center;
+	display: flex;
+	position: relative;
+	flex: 1 1;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="fullscreen-mode">
+            </div>
+            <div class="change-theme-button">
+                <span>Change theme</span>
+            </div>
+        </div>
+        <div class="player-container">
+            <div class="song-data-container">
+                <div class="song-artist">
+                    <span>Loading</span>
+                </div>
+                <div class="song-name">
+                    <span>info...</span>
+                </div>
+            </div>
+            <div class="song-controls">
+                <div class="play-pause-switch">
+                    <svg viewBox="5 5 25 25">
+                        <use href="./icons/icons.svg#play" />
+                        <use class="pause" href="./icons/icons.svg#pause" />
+                    </svg>
+                </div>
+                <div class="volume-control">
+                    <input type="range" min="0" max="100" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/popup.js"></script>
+</body>
+
+</html>
